@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRB FM</title>
+
+<!-- Poppins Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background-color: #121c24;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+/* Gradient Line */
+.gradient-line {
+    width: 80%;
+    max-width: 600px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, 
+        #067480, 
+        #0dd8c9, 
+        #b686e7, 
+        #f080c9, 
+        #d378bb);
+    margin-bottom: 30px;
+}
+
+/* Player Container */
+.player-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 3px;
+    border-radius: 16px;
+    background: linear-gradient(90deg, 
+        #067480, 
+        #0dd8c9, 
+        #b686e7, 
+        #f080c9, 
+        #d378bb);
+    margin-bottom: 30px;
+}
+
+.player-inner {
+    background-color: #121c24;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    min-height: 150px;
+    border: 0;
+}
+
+/* Gradient Button */
+.listen-button {
+    display: inline-block;
+    padding: 14px 30px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(90deg, 
+        #067480, 
+        #0dd8c9, 
+        #b686e7, 
+        #f080c9, 
+        #d378bb);
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(13, 216, 201, 0.4);
+}
+
+.listen-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(246, 128, 201, 0.6);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<img src="logo.png" alt="BRB FM Logo" class="logo">
+
+<div class="gradient-line"></div>
+
+<div class="player-container">
+    <div class="player-inner">
+        <iframe src="https://a7.asurahosting.com/public/brb_fm/embed?theme=light"
+        allowtransparency="true"></iframe>
+    </div>
+</div>
+
+<a href="https://a7.asurahosting.com/public/brb_fm" target="_blank" class="listen-button">
+    ▶ Listen Live
+</a>
+
+<footer>
+    © 2026 BRB FM — Digital Soundwaves
+</footer>
+
+</body>
+</html>
